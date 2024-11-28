@@ -1,0 +1,131 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 8rem;
+}
+header nav {
+  background-color: var(--primary);
+  padding: 1.5rem 2rem;
+  font-size: var(--linkfontSize);
+  border-radius: 4rem;
+}
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+header nav a, .menuCont ul a  {
+  color: var(--titleColor);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 0.5rem;
+}
+header nav a:hover {
+  color: var(--titleColor);
+  opacity: 0.6;
+
+  border-top: 1px solid var(--blue);
+}
+header .list {
+  display: none;
+  cursor: pointer;
+  font-size: 3.5rem;
+  border-radius: 1rem;
+}
+header .mode {
+  cursor: pointer;
+  display: block;
+  font-size: 3.5rem;
+  border-radius: 1rem;
+}
+
+
+
+header .menuCont {
+
+  position: fixed;
+  background-color: var(--primary);
+  inset: 0;
+  opacity: 0.9;
+  z-index: 99;
+
+}
+header .menuCont .menu {
+width: 80%;
+max-width: 70rem;
+margin: 10rem auto;
+background-color: black;
+padding: 4rem;
+z-index: 999;
+border-radius: 2rem;
+animation: movemenu .6s ease-in  1 ;
+
+
+}
+@keyframes movemenu {
+    0%{
+opacity: 0;
+transform: scale(.3);
+    }50%{
+transform: scale(1.2);
+    }
+    100%{
+opacity: 1;
+    }
+}
+header .menuCont ul{
+    list-style-type: none;
+    font-size: var(--linkfontSize);
+  }
+header .menuCont ul li{
+margin: 2rem 0;
+border-bottom: 1px solid rgba(245, 222, 179, 0.363) ;
+
+
+  }
+  header .menuCont ul li a:hover{
+
+    border-left:2rem solid rgba(245, 222, 179, 0.363) ;
+    color: var(--titleColor);
+
+    
+    
+      }
+ .menu div{
+    text-align: right;
+    border-bottom: none ;
+      }
+      .menu .close{
+font-size: 4rem;
+display: block;
+text-align: right;
+          }
+          .menu .close:hover{
+
+        
+            color: orangered;
+            text-align: right;
+                      }
+    
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+  header nav {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  header nav {
+    display: none;
+  }
+  header .list {
+    display: block;
+  }
+}

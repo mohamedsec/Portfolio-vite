@@ -1,0 +1,126 @@
+section.main{
+    display: flex;
+    gap: 2rem;
+
+}
+section .filter{
+flex: 0 0 20%;
+width: 20%;
+}
+section .filter ul{
+    width: 100%;
+list-style-type: none;
+}
+section .filter ul li{
+padding: 1rem .5rem;
+background-color: var(--primary);
+margin: .5rem 0;
+text-align: center;
+border-radius: .6rem;
+border:1px solid var(--lblue)
+}
+section .filter ul li:hover{
+
+    border:1px solid var(--blue)
+    }
+.content{
+    flex: 0 0 80%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+}
+.content .card{
+    width: 300px;
+    border:1px solid var(--lblue);
+    transition: all .5s ;
+    overflow: hidden;
+
+}
+.content .card:hover{
+    border:1px solid var(--blue);
+    transform: rotateZ(5deg);
+
+}
+.content .details{
+background-color: var(--primary);
+padding: 1rem;
+}
+.content .details h2{
+margin: 1rem 0;
+    }
+.content .link{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    padding: 1rem;
+}
+.content .link .left{
+font-size: 2rem;
+display: flex;
+gap: 1rem;
+}
+.content .link .right{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.content .link .right a{
+color: var(--lblue);
+transition: all .3s;
+text-decoration: none;
+
+}
+.content .link .right a{
+    color: var(--blue);
+    
+    }
+
+    .content .card>img{
+        width: 300px;
+        height: 300px;
+
+    
+    }
+
+@media screen and (max-width: 850px) {
+    section.main{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    section .filter{
+        flex: 0 0 100%;
+        width: 100%;
+        }
+
+        .content{
+            flex: 0 0 100%;
+            width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 3.5rem;
+        
+        }
+        
+        .content .card{
+            width: 80%;
+            border:1px solid var(--lblue)
+        
+        }
+        
+    
+}
+@media screen and (max-width: 600px) {
+
+    .content .card{
+        width: 100%;
+        border:1px solid var(--lblue)
+    
+    }
+    
+}

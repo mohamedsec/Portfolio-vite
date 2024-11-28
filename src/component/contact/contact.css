@@ -1,0 +1,107 @@
+.contact p{
+    margin-top: 1rem;
+}
+.formaimate{
+    border: 1px solid var(--blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0,.5);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.formaimate form{
+
+font-size: 2rem;
+flex:0 0 70%;
+display: flex;
+flex-direction: column;
+}
+.animate{
+    flex:0 0 30%;
+}
+.animate img{
+width: 100%;
+}
+.formaimate form .one{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+
+    }
+
+.formaimate form .one input{
+border: 1px solid var(--lblue);
+    background-color: var(--primary);
+  width: 30rem;
+  padding: 1rem 2rem;
+  color: var(--titleColor);
+    }
+
+    .formaimate form .one textarea{
+        background-color: var(--primary);
+        display: block;
+        margin: 1rem 0 2rem;
+        width: 30rem;
+        padding: 1rem 2rem;
+        min-height: 20rem;
+        border: 1px solid var(--lblue);
+        color: var(--titleColor);
+        }   
+
+        .formaimate form button{
+padding:1rem 2rem ;
+background-color: var(--primary);
+color: var(--titleColor);
+border: 1px solid var(--lblue);
+align-self: left;
+border-radius: .5rem;
+
+        
+            }  
+
+            .formaimate form .one input:hover,  .formaimate form .one textarea:hover, .formaimate form button:hover {
+                border: 1px solid var(--blue);
+                outline: none;
+                
+                    }
+
+                    .formaimate form .one input:focus  .formaimate form .one textarea:focus, .formaimate form button:focus {
+                        border: 1px solid rgba(69, 253, 69, 0.699);
+                           outline: none;
+                        
+                            }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .formaimate{
+        align-items: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+    }
+    .formaimate .animate{
+ display: none;
+    }
+    .formaimate form .one{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+    
+        }
+        .formaimate form{
+            flex:0 0 100%;
+
+            }
+}
+

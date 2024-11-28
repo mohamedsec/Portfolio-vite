@@ -1,0 +1,69 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .text{
+flex:1 1 50%;
+}
+.hero .profile{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+
+    border: 1px solid var(--blue);
+margin: 2rem 1rem 0 0;
+
+    }
+    .hero .text>i{
+color: var(--blue);
+font-size: 2rem;
+    
+        }
+.hero .text h1{
+margin: 3rem 0;
+text-transform: uppercase;
+    }
+    .hero .text h2{
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        text-transform:capitalize;
+        }
+        .hero .text p{
+        text-align: left;
+            }
+.hero .icon{
+    flex:1 1 50%;
+
+    }
+.hero .heroIcon{
+
+width: 100%;
+}
+.hero .social{
+margin-top:1.5rem ;
+font-size: 2.4rem;
+display: flex;
+gap: 2rem;
+}
+.hero .social .socialItem{
+    display: block;
+    transition: all .5s;
+
+}
+.hero .social .socialItem:hover{
+  color: var(--blue);
+
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+}
